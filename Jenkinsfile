@@ -10,7 +10,7 @@ node {
       sh "${mvn} clean package"
 //      sh "/opt/apache-maven-3.6.3/bin/mvn clean package"
       }
-   stage('SonarQube Analysis') {
+/*   stage('SonarQube Analysis') {
       //code analysis
       def mvnHome = tool name: 'mvn', type: 'maven'
       def mvn = "${mvnHome}/bin/mvn"
@@ -25,5 +25,5 @@ node {
               error "Pipeline aborted due to quality gate failure: ${qg.status}"
            }
         }
-      }
+      }*/
 }
