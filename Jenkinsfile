@@ -12,7 +12,7 @@ node {
       }
    stage('build docker image') {
       //create dockerr image
-      sh "docker build . -t ajju13/springhello:${env.BUILDNO}"
+      sh "docker build . -t ajju13/springhello:${env.BUILD_NO}"
       }
 /*   stage('SonarQube Analysis') {
       //code analysis
